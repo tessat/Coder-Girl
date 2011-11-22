@@ -8,7 +8,7 @@
 
 // On index load
 $('.pages.index').ready(function() {
-	// run_hello_world();
+	run_hello_world();
 });
 
 
