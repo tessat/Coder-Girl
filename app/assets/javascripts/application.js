@@ -20,6 +20,7 @@
 // On load
 $(document).ready(function() {
 	load_background();
+	preload_images();
 });
 
 // Img swap in
@@ -52,5 +53,19 @@ function load_background() {
 		error: function(XMLHttpRequest, textStatus, errorThrown) {
 
 		},
+	});
+}
+
+function preload_images() {
+	var images = new Array();
+	$('img.hover-swap').each(function() {
+		images.push($(this).attr('src').replace('.png', '-selected.png'));
+	});
+	preload(images);
+}
+
+function preload(arrayOfImages) {
+	$(arrayOfImages).each(function(){
+		$('<img/>')[0].src = this;
 	});
 }
