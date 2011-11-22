@@ -7,3 +7,50 @@
 //= require jquery
 //= require jquery_ujs
 //= require_tree .
+
+
+// ***************
+// Includes
+// ***************
+
+// ***************
+// Events
+// ***************
+
+// On load
+$(document).ready(function() {
+	load_background();
+});
+
+// Img swap in
+$('img.hover-swap').live('mouseenter', function() {
+	var new_src = $(this).attr('src').replace('.png', '-selected.png');
+	$(this).attr('src', new_src);
+});
+
+// Img swap out
+$('img.hover-swap').live('mouseleave', function() {
+	var new_src = $(this).attr('src').replace('-selected', '');
+	$(this).attr('src', new_src);
+});
+
+// ***************
+// Functions
+// ***************
+
+function load_background() {
+	$.ajax({
+		url: "/background.txt",
+		data: {},
+		type: 'GET',
+		dataType: 'text',
+		success: function(text) {
+			$('body').prepend('<div id="background"><span></span></div>');
+			var style = "#background span:before {content: '"+text+text+text+"';}";
+			$('head').append('<style>'+style+'</style>');
+		},
+		error: function(XMLHttpRequest, textStatus, errorThrown) {
+
+		},
+	});
+}

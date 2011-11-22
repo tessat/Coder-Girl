@@ -19,7 +19,7 @@ $('.pages.index').ready(function() {
 
 function run_hello_world() {
 	// Create the hello world element
-	$('.pages.index').append('<div id="page-overlay"><span class="hello-world">\><span class="cursor">&nbsp;</span></span></div>');
+	$('body').append('<div id="page-overlay"><span class="hello-world">\><span class="cursor">&nbsp;</span></span></div>');
 	// Run
 	hello_world("hello world");
 	

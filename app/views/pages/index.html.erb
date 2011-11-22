@@ -1,6 +1,56 @@
 <div class="pages index">
-  <h1></h1>
-  <p>
-    Coming Soon...
+
+  <p>Hello, World</p>
+
+  <section>
+    <h2>I'm Working On</h2>
+    
+    <ul>
+      <li>
+        <%= link_to content_tag('h3', 'Beer2Buds'), "http://fresh.beer2buds.com", :target => '_blank' %>
+        <ul class="social">
+          <li><%= link_to image_tag('facebook-icon.png', :class => 'hover-swap', :height => '25px'), "http://www.facebook.com/beer2buds", 'target' => '_blank' %></li>
+          <li><%= link_to image_tag('twitter-icon.png', :class => 'hover-swap', :height => '25px'), "http://www.twitter.com/beer2buds", 'target' => '_blank' %></li>
+          <li><%= link_to image_tag('blog-icon.png', :class => 'hover-swap', :height => '25px'), "http://blog.beer2buds.com", 'target' => '_blank' %></li>
+        </ul>
+        <div class="tagline">Send Beer Online</div>
+      </li>
+      <li>
+        <%= link_to content_tag('h3', 'PromoBomb'), "http://promobomb.com", :target => '_blank' %>
+        <ul class="social">
+          <li><%= link_to image_tag('facebook-icon.png', :class => 'hover-swap', :height => '25px'), "http://www.facebook.com/promobomb", 'target' => '_blank' %></li>
+          <li><%= link_to image_tag('twitter-icon.png', :class => 'hover-swap', :height => '25px'), "http://www.twitter.com/promobomb", 'target' => '_blank' %></li>
+          <li><%= link_to image_tag('blog-icon.png', :class => 'hover-swap', :height => '25px'), "http://blog.promobomb.com", 'target' => '_blank' %></li>
+        </ul>
+        <div class="tagline">Explode Your Business</div>
+      </li>
+    </ul>
+    
+  </section>
+  
+  <section>
+    <h2>I'm Playing With</h2>
+    
+    <ul>
+      <li>
+        <%= link_to content_tag('h3', 'Ripple Effect'), "http://rippl-fx.com", :target => '_blank' %>
+        <ul class="social">
+          <li><%= link_to image_tag('twitter-icon.png', :class => 'hover-swap', :height => '25px'), "http://www.twitter.com/rippl_fx", 'target' => '_blank' %></li>
+        </ul>
+        <div class="tagline">What's Your Effect?</div>
+      </li>
+      <li>
+        <%= link_to content_tag('h3', 'KraftPop'), "http://kraftpop.com", :target => '_blank' %>
+        <ul class="social">
+          <li><%= link_to image_tag('twitter-icon.png', :class => 'hover-swap', :height => '25px'), "http://www.twitter.com/kraftpop", 'target' => '_blank' %></li>
+        </ul>
+        <div class="tagline"></div>
+      </li>
+    </ul>
+    
+  </section>
+  
+  <p class="bottom">
+    -CG
   </p>
 </div>
