@@ -7,6 +7,20 @@
     
     <ul>
       <li>
+        <%= link_to content_tag('h3', 'Co'), "http://coapp.co", :target => '_blank' %>
+        <ul class="social">
+          <li><%= link_to image_tag('facebook-icon.png', :class => 'hover-swap', :height => '25px'), "#", 'target' => '_blank' %></li>
+          <li><%= link_to image_tag('twitter-icon.png', :class => 'hover-swap', :height => '25px'), "https://twitter.com/GoCoApp", 'target' => '_blank' %></li>
+          <li><%= link_to image_tag('blog-icon.png', :class => 'hover-swap', :height => '25px'), "#", 'target' => '_blank' %></li>
+        </ul>
+        <div class="tagline">Bringing Your Worlds Together</div>
+      </li>
+    </ul>
+
+    <h2>Past Projects</h2>
+    
+    <ul>
+      <li>
         <%= link_to content_tag('h3', 'Beer2Buds'), "http://fresh.beer2buds.com", :target => '_blank' %>
         <ul class="social">
           <li><%= link_to image_tag('facebook-icon.png', :class => 'hover-swap', :height => '25px'), "http://www.facebook.com/beer2buds", 'target' => '_blank' %></li>
