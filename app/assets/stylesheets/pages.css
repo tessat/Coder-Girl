@@ -78,3 +78,38 @@ Pages
 	clear:both;
 	font-size:14px;
 }
+
+/* Pages: Sandbox */
+
+.pages.sandbox {
+	
+}
+
+.pages.sandbox ul.columns {
+	padding:0px;
+	margin:30px auto;
+	width:90%;
+	list-style:none;
+}
+
+.pages.sandbox ul.columns li {
+	display:inline-block;
+	margin:5px;
+	padding:0px;
+	float:left;
+	width:100px;
+	height:400px;
+}
+
+.pages.sandbox ul.columns li:hover {
+/*	cursor:hand;
+	cursor:pointer;*/
+}
+
+.pages.sandbox ul.columns li div {
+	background:#ddd;
+	border:1px solid #777;
+	height:10px;
+	width:100px;
+	margin:0 auto;
+}

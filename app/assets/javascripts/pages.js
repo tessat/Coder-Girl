@@ -6,9 +6,17 @@
 // Events
 // ***************
 
-// On index load
-$('.pages.index').ready(function() {
-	run_hello_world();
+// On page load
+$(document).ready(function() {
+	// Index load
+	if ($('.pages').hasClass('index')) {
+		run_hello_world();
+	
+	// Sandbox load
+	} else if ($('.pages').hasClass('sandbox')) {
+		
+	}
+
 });
 
 
