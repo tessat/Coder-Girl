@@ -2,9 +2,9 @@ Codergirl::Application.routes.draw do
   # The priority is based upon order of creation:
   # first created -> highest priority.
   
-  root "pages#index"
+  root :to => "pages#index"
   
-  get '/sandbox', to: "pages#sandbox"
+  match 'sandbox' => "pages#sandbox"
 
 
 end
