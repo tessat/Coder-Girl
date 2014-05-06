@@ -2,13 +2,36 @@
   <div class="logo">
     <%= link_to "C0d3r Girl", root_path %>
   </div>
-  <div class="social">
-    <ul>
-      <li><%= link_to image_tag('facebook-icon.png', :class => 'hover-swap', :height => '35px'), "http://www.facebook.com/tessataylor", 'target' => '_blank' %></li>
-      <li><%= link_to image_tag('twitter-icon.png', :class => 'hover-swap', :height => '35px'), "http://www.twitter.com/c0d3rgirl", 'target' => '_blank' %></li>
-      <li><%= link_to image_tag('linkedin-icon.png', :class => 'hover-swap', :height => '35px'), "http://www.linkedin.com/profile/view?id=22720852", 'target' => '_blank' %></li>
-      <li><%= link_to image_tag('github-icon-small.png', :class => 'hover-swap', :height => '35px'), "https://github.com/tessat", 'target' => '_blank' %></li>
-      <li><%= link_to image_tag('blog-icon.png', :class => 'hover-swap', :height => '35px'), "http://blog.c0d3r-girl.com", 'target' => '_blank' %></li>
-    </ul>
-  </div>
+  <ul class="social large">
+    <li>
+			<%= link_to "http://www.facebook.com/tessataylor", 'target' => '_blank', :class => "has-hover" do %>
+				<%= image_tag('facebook-icon.png') %>
+				<%= image_tag('facebook-icon-selected.png', :class => 'hover') %>
+			<% end %>
+		</li>
+		<li>
+			<%= link_to "http://www.twitter.com/c0d3rgirl", 'target' => '_blank', :class => "has-hover" do %>
+				<%= image_tag('twitter-icon.png') %>
+				<%= image_tag('twitter-icon-selected.png', :class => 'hover') %>
+			<% end %>
+		</li>
+		<li>
+			<%= link_to "http://www.linkedin.com/profile/view?id=22720852", 'target' => '_blank', :class => "has-hover" do %>
+				<%= image_tag('linkedin-icon.png') %>
+				<%= image_tag('linkedin-icon-selected.png', :class => 'hover') %>
+			<% end %>
+		</li>
+		<li>
+			<%= link_to "https://github.com/tessat", 'target' => '_blank', :class => "has-hover" do %>
+				<%= image_tag('github-icon-small.png') %>
+				<%= image_tag('github-icon-small-selected.png', :class => 'hover') %>
+			<% end %>
+		</li>
+		<li>
+			<%= link_to "http://blog.c0d3r-girl.com", 'target' => '_blank', :class => "has-hover" do %>
+				<%= image_tag('blog-icon.png') %>
+				<%= image_tag('blog-icon-selected.png', :class => 'hover') %>
+			<% end %>
+		</li>
+  </ul>
 </div>

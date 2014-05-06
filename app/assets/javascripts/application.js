@@ -20,20 +20,8 @@
 // On load
 $(document).ready(function() {
 	load_background();
-	preload_images();
 });
 
-// Img swap in
-$('img.hover-swap').live('mouseenter', function() {
-	var new_src = '/assets/'+$(this).attr('alt').toLowerCase()+'-selected.png';
-	$(this).attr('src', new_src);
-});
-
-// Img swap out
-$('img.hover-swap').live('mouseleave', function() {
-	var new_src = '/assets/'+$(this).attr('alt').toLowerCase()+'.png';
-	$(this).attr('src', new_src);
-});
 
 // ***************
 // Functions
@@ -56,16 +44,3 @@ function load_background() {
 	});
 }
 
-function preload_images() {
-	var images = new Array();
-	$('img.hover-swap').each(function() {
-		images.push('/assets/'+$(this).attr('alt').toLowerCase()+'-selected.png');
-	});
-	preload(images);
-}
-
-function preload(arrayOfImages) {
-	$(arrayOfImages).each(function(){
-		$('<img/>')[0].src = this;
-	});
-}

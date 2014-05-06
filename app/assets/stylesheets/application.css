@@ -51,6 +51,56 @@ h1, h2, h3, h4 {
 	background:#4ccb48;
 }
 
+.has-hover {
+  position:relative;
+}
+
+.has-hover img {
+  position:absolute;
+  top:0px;
+  left:0px;
+}
+
+.has-hover img.hover {
+  display:none;
+}
+
+.has-hover:hover img {
+  display:none;
+}
+
+.has-hover:hover img.hover {
+  display:inline-block;
+}
+
+.social li {
+  display:inline-block;
+	float:left;
+	clear:none;
+	margin:0px 3px;
+}
+
+.social li a {
+  display:inline-block;
+}
+
+.social li a img {
+  width:100%;
+}
+
+.social.large li a {
+  width:35px;
+  height:35px;
+}
+
+.social.small li a {
+  width:25px;
+  height:25px;
+}
+
+
+
+
 /**************
 Page Format
 ***************/
@@ -92,21 +142,8 @@ Page Format
 
 #header .social {
 	position:absolute;
-	top:15px;
+	top:0px;
 	right:10px;
-}
-
-#header .social ul {
-	list-style:none;
-	padding:0px;
-	margin:0px;
-}
-
-#header .social ul li {
-	padding:0px;
-	margin:0px 3px;
-	display:inline-block;
-	float:left;
 }
 
 /* Page Format: Content */
