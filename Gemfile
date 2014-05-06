@@ -1,34 +1,37 @@
-source 'http://rubygems.org'
+source 'https://rubygems.org'
 
-gem 'rails', '3.1.1'
+# Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
+gem 'rails', '4.1.0'
 
-# Bundle edge Rails instead:
-# gem 'rails',     :git => 'git://github.com/rails/rails.git'
-
-group :development do
+group :development, :test do
+  # db
   gem 'sqlite3'
-  gem 'ruby-debug19'
-end
-
-group :test do
-  gem 'sqlite3'
+  
+  # Use debugger
+  gem 'debugger'
 end
 
 group :production do
   gem 'pg'
-  gem 'execjs'
-  gem 'therubyracer'
+  # Production assets
+  gem 'rails_12factor'
+  
+  # See https://github.com/sstephenson/execjs#readme for more supported runtimes
+  gem 'therubyracer', platforms: :ruby
 end
 
-
-# Gems used only for assets and not required
-# in production environments by default.
-group :assets do
-  gem 'sass-rails',   '~> 3.1.4'
-  gem 'coffee-rails', '~> 3.1.1'
-  gem 'uglifier', '>= 1.0.3'
+group :doc do
+  # bundle exec rake doc:rails generates the API under doc/api.
+  gem 'sdoc', require: false
 end
 
+# Use SCSS for stylesheets
+gem 'sass-rails', '~> 4.0.2'
+
+# Use Uglifier as compressor for JavaScript assets
+gem 'uglifier', '>= 1.3.0'
+
+# Use jquery as the JavaScript library
 gem 'jquery-rails'
 
 # To use ActiveModel has_secure_password
@@ -40,10 +43,4 @@ gem 'jquery-rails'
 # Deploy with Capistrano
 # gem 'capistrano'
 
-# To use debugger
-# gem 'ruby-debug19', :require => 'ruby-debug'
 
-group :test do
-  # Pretty printed test output
-  gem 'turn', :require => false
-end
